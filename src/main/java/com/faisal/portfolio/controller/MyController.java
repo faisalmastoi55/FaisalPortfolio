@@ -17,7 +17,7 @@ public class MyController {
 	@Autowired
 	private UserService userService;
 
-	@GetMapping("/faisal-portfolio")
+	@GetMapping()
 	public String portfolio()
 	{
 		
