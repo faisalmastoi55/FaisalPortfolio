@@ -1,0 +1,875 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+	<!-- Favicon -->
+	<link href="img/favicon.ico" rel="icon">
+
+	<!-- Google Web Fonts -->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+
+	<!-- Font Awesome -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+	<!-- Libraries Stylesheet -->
+	<link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+	<link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+
+	<link rel="stylesheet" th:href="@{/css/style.css}" />
+
+	<title>Faisal Portfolio</title>
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="51">
+
+	<!-- Navbar Start -->
+	<nav class="navbar fixed-top shadow-sm navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-lg-5">
+		<a href="index.html" class="navbar-brand ml-lg-3">
+			<h1 class="m-0 display-5"><span class="text-primary">Faisal</span> Ali</h1>
+		</a>
+		<button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse px-lg-3" id="navbarCollapse">
+			<div class="navbar-nav m-auto py-0">
+				<a href="#home" class="nav-item nav-link active">Home</a>
+				<a href="#about" class="nav-item nav-link">About</a>
+				<a href="#qualification" class="nav-item nav-link">Quality</a>
+				<a href="#skill" class="nav-item nav-link">Skill</a>
+				<a href="#service" class="nav-item nav-link">Service</a>
+				<a href="#portfolio" class="nav-item nav-link">Portfolio</a>
+				<a href="#contact" class="nav-item nav-link">Contact</a>
+			</div>
+			<a href="" class="btn btn-outline-primary d-none d-lg-block">Hire Me</a>
+		</div>
+	</nav>
+	<!-- Navbar End -->
+
+
+	<!-- Video Modal Start -->
+	<div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+		aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-body">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+					<!-- 16:9 aspect ratio -->
+					<div class="embed-responsive embed-responsive-16by9">
+						<iframe class="embed-responsive-item" src="" id="video" allowscriptaccess="always"
+							allow="autoplay"></iframe>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Video Modal End -->
+
+
+	<!-- Header Start -->
+	<div class="container-fluid bg-primary d-flex align-items-center mb-5 py-5" id="home" style="min-height: 100vh;">
+		<div class="container">
+			<div class="row align-items-center">
+				<div class="col-lg-5 px-5 pl-lg-0 pb-5 pb-lg-0">
+					<img class="img-fluid w-75 rounded-circle shadow-sm" id="mast"
+						style="height: 60vh; margin-left: 10%;" src="img/profile.jpg" alt="">
+				</div>
+				<div class="col-lg-7 text-center text-lg-left">
+					<h3 class="text-white font-weight-normal mb-3">I'm</h3>
+					<h1 class="display-3 text-uppercase text-primary mb-2" style="-webkit-text-stroke: 2px #ffffff;">
+						Faisal Ali</h1>
+					<h1 class="typed-text-output d-inline font-weight-lighter text-white"></h1>
+					<div class="typed-text d-none">Java, Servlet, Spring Boot, Spring Security, JWT, RESTful APIs, Microservices,
+						MySQL, PostgreSQL, Oracle, Hibernate ORM, Spring Data JPA, HTML5, CSS3, Bootstrap 5, Angular, Thyme leaf Engine, JSP,
+						Git, Bitbucket, GitHub, Maven, Swagger
+					</div>
+					<div class="d-flex align-items-center justify-content-center justify-content-lg-start pt-5">
+						<a href="./img/Faisal - Java Developer.pdf" class="btn btn-outline-light mr-5">Download CV</a>
+						<button type="button" class="btn-play" data-toggle="modal"
+							data-src="https://www.youtube.com/embed/DWRcNpR6Kdc" data-target="#videoModal">
+							<span></span>
+						</button>
+						<h5 class="font-weight-normal text-white m-0 ml-4 d-none d-sm-block">Play Video</h5>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Header End -->
+
+
+	<!-- About Start -->
+	<div class="container-fluid py-5" id="about">
+		<div class="container">
+			<div class="position-relative d-flex align-items-center justify-content-center">
+				<h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">About</h1>
+				<h1 class="position-absolute text-uppercase text-primary">About Me</h1>
+			</div>
+			<div class="row align-items-center">
+				<div class="col-lg-5 pb-4 pb-lg-0">
+					<img class="img-fluid rounded w-100" style="height: 70vh;" src="img/about.jpg" alt="">
+				</div>
+				<div class="col-lg-7">
+					<h3 class="mb-4">Java Developer</h3>
+					<p>
+						I possess expertise in Java programming, particularly as a Java developer proficient in the Spring Boot framework. Additionally, I am skilled in HTML, CSS, and Bootstrap, enabling me to craft visually appealing and responsive user interfaces.
+					</p>
+					<div class="row mb-3">
+						<div class="col-sm-6 py-2">
+							<h6>Name: <span class="text-secondary">Faisal Ali</span></h6>
+						</div>
+						<div class="col-sm-6 py-2">
+							<h6>Birthday: <span class="text-secondary">17 July 1999</span></h6>
+						</div>
+						<div class="col-sm-6 py-2">
+							<h6>Degree: <span class="text-secondary">Bachelor in Computer Science</span></h6>
+						</div>
+						<div class="col-sm-6 py-2">
+							<h6>Experience: <span class="text-secondary">1 Year</span></h6>
+						</div>
+						<div class="col-sm-6 py-2">
+							<h6>Phone: <span class="text-secondary">+92 311 1794360</span></h6>
+						</div>
+						<div class="col-sm-6 py-2">
+							<h6>Email: <span class="text-secondary">faisalmastoi55@gmail.com</span></h6>
+						</div>
+						<div class="col-sm-6 py-2">
+							<h6>Address: <span class="text-secondary">Gulshan e jamal, Karachi, Sindh, Pakistan</span>
+							</h6>
+						</div>
+						<div class="col-sm-6 py-2">
+							<h6>Freelance: <span class="text-secondary">Available</span></h6>
+						</div>
+					</div>
+					<a href="#" class="btn btn-outline-primary mr-4">Hire Me</a>
+					<a href="#" class="btn btn-outline-primary">Learn More</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- About End -->
+
+
+	<!-- Qualification Start -->
+	<div class="container-fluid py-5" id="qualification">
+		<div class="container">
+			<div class="position-relative d-flex align-items-center justify-content-center">
+				<h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Quality
+				</h1>
+				<h1 class="position-absolute text-uppercase text-primary">Education & Expericence</h1>
+			</div>
+			<div class="row">
+				<div class="col-lg-4">
+					<h3 class="mb-4">My Expericence</h3>
+					<div class="border-left border-primary pt-2 pl-4 ml-2">
+						<div class="position-relative mb-4">
+							<i class="far fa-dot-circle text-primary position-absolute"
+								style="top: 2px; left: -32px;"></i>
+							<h5 class="font-weight-bold mb-1">Associate Consultant - Java Developer</h5>
+							<p class="mb-2"><strong>Sapphire Consulting Services, Jamshoro</strong> | <small>JAN-2025 - Present</small>
+							</p>
+						</div>
+						<div class="position-relative mb-4">
+							<i class="far fa-dot-circle text-primary position-absolute"
+							   style="top: 2px; left: -32px;"></i>
+							<h5 class="font-weight-bold mb-1">Trainee Consultant - Java Developer</h5>
+							<p class="mb-2"><strong>Sapphire Consulting Services, Jamshoro</strong> | <small>JUL-2024 - DEC-2024</small>
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4">
+					<h3 class="mb-4">Awards and Certifications</h3>
+					<div class="border-left border-primary pt-2 pl-4 ml-2">
+						<div class="position-relative mb-4">
+							<i class="far fa-dot-circle text-primary position-absolute"
+								style="top: 2px; left: -32px;"></i>
+							<h5 class="font-weight-bold mb-1">Award for Best Performance in Java Programming </h5>
+							<p class="mb-2"><strong>Imagine Institute of Science and Technology, Hyderabad</strong> |
+								<small>16 MAY, 2022</small>
+							</p>
+						</div>
+						<div class="position-relative mb-4">
+							<i class="far fa-dot-circle text-primary position-absolute"
+								style="top: 2px; left: -32px;"></i>
+							<h5 class="font-weight-bold mb-1">Oracle(ERP) oracle data base 6 month traning</h5>
+							<p class="mb-2"><strong>(NAVTTC) Institute of mathematics & computer science</strong> |
+								<small>Jun 2021 - Dec 2021</small>
+							</p>
+						</div>
+						<div class="position-relative mb-4">
+							<i class="far fa-dot-circle text-primary position-absolute"
+								style="top: 2px; left: -32px;"></i>
+							<h5 class="font-weight-bold mb-1">Java(Basic)</h5>
+							<p class="mb-2"><strong>Hacker Rank</strong> |
+								<small>03 AUG, 2023</small>
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4">
+					<h3 class="mb-4">My Education</h3>
+					<div class="border-left border-primary pt-2 pl-4 ml-2">
+						<div class="position-relative mb-4">
+							<i class="far fa-dot-circle text-primary position-absolute"
+								style="top: 2px; left: -32px;"></i>
+							<h5 class="font-weight-bold mb-1">Bachelor In Computer Science</h5>
+							<p class="mb-2"><strong>University Of Sindh</strong> | <small>2020 - 2023</small></p>
+						</div>
+						<div class="position-relative mb-4">
+							<i class="far fa-dot-circle text-primary position-absolute"
+								style="top: 2px; left: -32px;"></i>
+							<h5 class="font-weight-bold mb-1">Intermediate</h5>
+							<p class="mb-2"><strong>Ustad Bukhari degree college Dadu,Sindh, Pakistan</strong> |
+								<small><br>2018 - 2019</small>
+							</p>
+						</div>
+						<div class="position-relative mb-4">
+							<i class="far fa-dot-circle text-primary position-absolute"
+								style="top: 2px; left: -32px;"></i>
+							<h5 class="font-weight-bold mb-1">Metriculation</h5>
+							<p class="mb-2"><strong>Future Bright Academy School Dadu,Sindh, Pakistan</strong> |
+								<small><br>2017</small>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Qualification End -->
+
+
+	<!-- Skill Start -->
+	<div class="container-fluid py-5" id="skill">
+		<div class="container">
+			<div class="position-relative d-flex align-items-center justify-content-center">
+				<h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Skills
+				</h1>
+				<h1 class="position-absolute text-uppercase text-primary">My Skills</h1>
+			</div>
+			<div class="row align-items-center">
+				<div class="col-md-6">
+					<div class="skill mb-4">
+						<div class="d-flex justify-content-between">
+							<h6 class="font-weight-bold">Java</h6>
+							<h6 class="font-weight-bold">95%</h6>
+						</div>
+						<div class="progress">
+							<div class="progress-bar bg-primary" role="progressbar" aria-valuenow="95" aria-valuemin="0"
+								aria-valuemax="100"></div>
+						</div>
+					</div>
+					<div class="skill mb-4">
+						<div class="d-flex justify-content-between">
+							<h6 class="font-weight-bold">Servlet</h6>
+							<h6 class="font-weight-bold">90%</h6>
+						</div>
+						<div class="progress">
+							<div class="progress-bar bg-danger" role="progressbar" aria-valuenow="90" aria-valuemin="0"
+								aria-valuemax="100"></div>
+						</div>
+					</div>
+					<div class="skill mb-4">
+						<div class="d-flex justify-content-between">
+							<h6 class="font-weight-bold">Spring Boot</h6>
+							<h6 class="font-weight-bold">50%</h6>
+						</div>
+						<div class="progress">
+							<div class="progress-bar bg-secondary" role="progressbar" aria-valuenow="50"
+								aria-valuemin="0" aria-valuemax="100"></div>
+						</div>
+					</div>
+					<div class="skill mb-4">
+						<div class="d-flex justify-content-between">
+							<h6 class="font-weight-bold">Spring Security | JWT Token</h6>
+							<h6 class="font-weight-bold">90%</h6>
+						</div>
+						<div class="progress">
+							<div class="progress-bar bg-info" role="progressbar" aria-valuenow="90" aria-valuemin="0"
+								aria-valuemax="100"></div>
+						</div>
+					</div>
+					<div class="skill mb-4">
+						<div class="d-flex justify-content-between">
+							<h6 class="font-weight-bold">Microservices</h6>
+							<h6 class="font-weight-bold">90%</h6>
+						</div>
+						<div class="progress">
+							<div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0"
+								aria-valuemax="100" style="background:  #800000;"></div>
+						</div>
+					</div>
+					<div class="skill mb-4">
+						<div class="d-flex justify-content-between">
+							<h6 class="font-weight-bold">MySQL</h6>
+							<h6 class="font-weight-bold">85%</h6>
+						</div>
+						<div class="progress">
+							<div class="progress-bar bg-dark" role="progressbar" aria-valuenow="85" aria-valuemin="0"
+								aria-valuemax="100"></div>
+						</div>
+					</div>
+					<div class="skill mb-4">
+						<div class="d-flex justify-content-between">
+							<h6 class="font-weight-bold">PostgreSQL</h6>
+							<h6 class="font-weight-bold">85%</h6>
+						</div>
+						<div class="progress">
+							<div class="progress-bar" style="background-color: #cddc39;" role="progressbar"
+								aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+						</div>
+					</div>
+					<div class="skill mb-4">
+						<div class="d-flex justify-content-between">
+							<h6 class="font-weight-bold">Oracle</h6>
+							<h6 class="font-weight-bold">85%</h6>
+						</div>
+						<div class="progress">
+							<div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0"
+								aria-valuemax="100" style="background: #0000ff;"></div>
+						</div>
+					</div>
+					<div class="skill mb-4">
+						<div class="d-flex justify-content-between">
+							<h6 class="font-weight-bold">Hibernate ORM</h6>
+							<h6 class="font-weight-bold">85%</h6>
+						</div>
+						<div class="progress">
+							<div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0"
+								aria-valuemax="100" style="background: #DE3163;"></div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="skill mb-4">
+						<div class="d-flex justify-content-between">
+							<h6 class="font-weight-bold">Spring Data JPA</h6>
+							<h6 class="font-weight-bold">90%</h6>
+						</div>
+						<div class="progress">
+							<div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0"
+								aria-valuemax="100" style="background: #ff8000;"></div>
+						</div>
+					</div>
+					<div class="skill mb-4">
+						<div class="d-flex justify-content-between">
+							<h6 class="font-weight-bold">HTML5 | CSS3 | Bootstrap 5</h6>
+							<h6 class="font-weight-bold">85%</h6>
+						</div>
+						<div class="progress">
+							<div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0"
+								aria-valuemax="100" style="background: #00ffff;"></div>
+						</div>
+					</div>
+					<div class="skill mb-4">
+						<div class="d-flex justify-content-between">
+							<h6 class="font-weight-bold">Angular</h6>
+							<h6 class="font-weight-bold">75%</h6>
+						</div>
+						<div class="progress">
+							<div class="progress-bar bg-info" role="progressbar" aria-valuenow="90" aria-valuemin="0"
+								aria-valuemax="100"></div>
+						</div>
+					</div>
+					<div class="skill mb-4">
+						<div class="d-flex justify-content-between">
+							<h6 class="font-weight-bold">| Thyme leaf Engine | JSP</h6>
+							<h6 class="font-weight-bold">90%</h6>
+						</div>
+						<div class="progress">
+							<div class="progress-bar bg-success" role="progressbar" aria-valuenow="95" aria-valuemin="0"
+								aria-valuemax="100"></div>
+						</div>
+					</div>
+					<div class="skill mb-4">
+						<div class="d-flex justify-content-between">
+							<h6 class="font-weight-bold">Git | GitHub</h6>
+							<h6 class="font-weight-bold">85%</h6>
+						</div>
+						<div class="progress">
+							<div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0"
+								aria-valuemax="100" style="background: #CCCCFF;"></div>
+						</div>
+					</div>
+					<div class="skill mb-4">
+						<div class="d-flex justify-content-between">
+							<h6 class="font-weight-bold">Bitbucket</h6>
+							<h6 class="font-weight-bold">85%</h6>
+						</div>
+						<div class="progress">
+							<div class="progress-bar bg-primary" role="progressbar" aria-valuenow="85" aria-valuemin="0"
+								aria-valuemax="100"></div>
+						</div>
+					</div>
+					<div class="skill mb-4">
+						<div class="d-flex justify-content-between">
+							<h6 class="font-weight-bold">Maven</h6>
+							<h6 class="font-weight-bold">85%</h6>
+						</div>
+						<div class="progress">
+							<div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0"
+								aria-valuemax="100" style="background: #008080;"></div>
+						</div>
+					</div>
+					<div class="skill mb-4">
+						<div class="d-flex justify-content-between">
+							<h6 class="font-weight-bold">Swagger</h6>
+							<h6 class="font-weight-bold">90%</h6>
+						</div>
+						<div class="progress">
+							<div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0"
+								aria-valuemax="100" style="background: #FF00FF;"></div>
+						</div>
+					</div>
+					<div class="skill mb-4">
+						<div class="d-flex justify-content-between">
+							<h6 class="font-weight-bold">Tomcat Server</h6>
+							<h6 class="font-weight-bold">85%</h6>
+						</div>
+						<div class="progress">
+							<div class="progress-bar bg-warning" role="progressbar" aria-valuenow="65" aria-valuemin="0"
+								aria-valuemax="100"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Skill End -->
+
+
+	<!-- Services Start -->
+	<div class="container-fluid pt-5" id="service">
+		<div class="container">
+			<div class="position-relative d-flex align-items-center justify-content-center">
+				<h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Service
+				</h1>
+				<h1 class="position-absolute text-uppercase text-primary">My Services</h1>
+			</div>
+			<div class="row pb-3">
+				<div class="col-lg-4 col-md-6 text-center mb-5">
+					<div class="d-flex align-items-center justify-content-center mb-4">
+						<i class="fa fa-2x fa-laptop service-icon bg-primary text-white mr-3"></i>
+						<h4 class="font-weight-bold m-0">Web Design</h4>
+					</div>
+					<input type="checkbox" id="check1">
+					<p class="text-left">
+							I create Professional and Responsive Front End Websites using pure HTML, CSS, Bootstrap
+							and JavaScript with 1 year of experience.
+							If you don't have any sample design, just share your business idea.
+							I'll convert your ideas into a beautiful modern design.
+						</p>
+						<div class="content1">
+						<h5 class="text-left">Technologies I use :</h5>
+						<ul class="text-left">
+							<li>HTML5</li>
+							<li>CSS3</li>
+							<li>Bootstrap5</li>
+							<li>JavaScript</li>
+						</ul>
+						<label class="border-bottom border-primary text-primary" style="cursor: pointer;"
+							for="check1">Show Less</label>
+					</div>
+					<label class="border-bottom border-primary text-primary" style="cursor: pointer;" for="check1">Read
+						More</label>
+				</div>
+				<div class="col-lg-4 col-md-6 text-center mb-5">
+					<div class="d-flex align-items-center justify-content-center mb-4">
+						<i class="fa fa-2x fa-laptop service-icon bg-primary text-white mr-3"></i>
+						<h4 class="font-weight-bold m-0">Web Development in Java</h4>
+					</div>
+					<input type="checkbox" id="check2">
+					<p class="text-left">
+						I have great experience in web development using java frameworks hands on experience in HTML,
+						CSS and bootstrap to make the website responsive and eye catching design.
+					</p>
+					<div class="content2">
+						<h5 class="text-left">
+							I am providing the following services for web application development.
+						</h5>
+						<ul class="text-left">
+							<li>Fix bugs in your site to make your website bug free.</li>
+							<li>Customize the design of your website with cool CSS and Bootstrap design.</li>
+							<li>Make your web application responsive for all devices.</li>
+							<li>You can provide me theme of your choice and I will customize your theme according to
+								your requirements.</li>
+							<li>Integrate database connectivity for your website to secure your important data.</li>
+							<li>Add all validations for your website.</li>
+							<li>Create admin panel for your site where you can easily view/add/update/delete your
+								web application data.</li>
+						</ul>
+						<h5 class="text-left">Technologies I use :</h5>
+						<ul class="text-left">
+							<li>HTML5</li>
+							<li>CSS3</li>
+							<li>Bootstrap5</li>
+							<li>Servlet & JSP</li>
+							<li>Hibernate</li>
+							<li>Spring Framework</li>
+							<li>Spring Boot Framework</li>
+							<li>MySql</li>
+						</ul>
+						<h5 class="text-left">IDE I use :</h5>
+						<ul class="text-left">
+							<li>IntellJ Idea</li>
+							<li>Netbeans</li>
+							<li>Eclipse</li>
+							<li>STS</li>
+						</ul>
+						<label class="border-bottom border-primary text-primary" style="cursor: pointer;"
+							for="check2">Show Less</label>
+					</div>
+					<label class="border-bottom border-primary text-primary" style="cursor: pointer;" for="check2">Read
+						More</label>
+				</div>
+				<div class="col-lg-4 col-md-6 text-center mb-5">
+					<div class="d-flex align-items-center justify-content-center mb-4">
+						<i class="fa fa-2x fa-laptop-code service-icon bg-primary text-white mr-3"></i>
+						<h4 class="font-weight-bold m-0">Desktop Development</h4>
+					</div>
+					<input type="checkbox" id="check3">
+					<p class="text-left">
+						I love programming and have 1 years of Experience in java oop, java swing, java GUI,
+						and java console.
+					</p>
+					<div class="content3">
+						<p class="text-left">
+							My projects include some major Database Management Systems like School Management
+							Systems,
+							Library Management Systems, and many more, so I have a good grip on Java programming and
+							IDE tools.
+						</p>
+						<h5 class="text-left">Here are the services that I am offering:</h5>
+						<ul class="text-left">
+							<li>Java Programming</li>
+							<li>Java Console Base Projects</li>
+							<li>Java GUI Project With database And File Handling</li>
+							<li>Java Swing</li>
+							<li>GUI applications</li>
+							<li>Custom programs/applications</li>
+						</ul>
+						<label class="border-bottom border-primary text-primary" style="cursor: pointer;"
+							for="check3">Show Less</label>
+					</div>
+					<label class="border-bottom border-primary text-primary" style="cursor: pointer;" for="check3">Read
+						More</label>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Services End -->
+
+	<!-- Portfolio Start -->
+	<div class="container-fluid pt-5 pb-3" id="portfolio">
+		<div class="container">
+			<div class="position-relative d-flex align-items-center justify-content-center">
+				<h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Gallery
+				</h1>
+				<h1 class="position-absolute text-uppercase text-primary">My Portfolio</h1>
+			</div>
+			<div class="row">
+				<div class="col-12 text-center mb-2">
+					<ul class="list-inline mb-4" id="portfolio-flters">
+						<li class="btn btn-sm btn-outline-primary m-1 active" data-filter="*">All</li>
+						<li class="btn btn-sm btn-outline-primary m-1" data-filter=".first">Spring</li>
+						<li class="btn btn-sm btn-outline-primary m-1" data-filter=".second">Spring Boot</li>
+						<li class="btn btn-sm btn-outline-primary m-1" data-filter=".third">Servlet & JSP</li>
+					</ul>
+				</div>
+			</div>
+			<div class="row portfolio-container">
+				<div class="col-lg-4 col-md-6 mb-4 portfolio-item first">
+					<div class="position-relative overflow-hidden mb-2">
+						<img class="img-fluid rounded w-100" src="img/spring/result.png" alt="">
+						<div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
+							<a href="img/spring/result.png" data-lightbox="result">
+								<i class="fa fa-plus text-white" style="font-size: 60px;"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 mb-4 portfolio-item second">
+					<div class="position-relative overflow-hidden mb-2">
+						<img class="img-fluid rounded w-100" src="img/videoStreaming/home.JPG" alt="">
+						<div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
+							<a href="img/videoStreaming/home.JPG" data-lightbox="videoStreaming">
+								<i class="fa fa-plus text-white" style="font-size: 60px;"></i>
+							</a>
+							<a href="img/videoStreaming/register.JPG" data-lightbox="videoStreaming"></a>
+							<a href="img/videoStreaming/login.JPG" data-lightbox="videoStreaming"></a>
+							<a href="img/videoStreaming/registerEmail.JPG" data-lightbox="videoStreaming"></a>
+							<a href="img/videoStreaming/otpVerify.JPG" data-lightbox="videoStreaming"></a>
+							<a href="img/videoStreaming/changePassword.JPG" data-lightbox="videoStreaming"></a>
+							<a href="img/videoStreaming/user/video.JPG" data-lightbox="videoStreaming"></a>
+							<a href="img/videoStreaming/user/songDisplay.png" data-lightbox="videoStreaming"></a>
+							<a href="img/videoStreaming/user/uploadVideos.png" data-lightbox="videoStreaming"></a>
+							<a href="img/videoStreaming/user/createAlbum.png" data-lightbox="videoStreaming"></a>
+							<a href="img/videoStreaming/user/privateAlbum.png" data-lightbox="videoStreaming"></a>
+							<a href="img/videoStreaming/user/publicAlbum.png" data-lightbox="videoStreaming"></a>
+							<a href="img/videoStreaming/user/albumVideos.png" data-lightbox="videoStreaming"></a>
+							<a href="img/videoStreaming/user/playlistVideos.png" data-lightbox="videoStreaming"></a>
+							<a href="img/videoStreaming/user/changePassword.png" data-lightbox="videoStreaming"></a>
+							<a href="img/videoStreaming/user/profile.png" data-lightbox="videoStreaming"></a>
+							<a href="img/videoStreaming/admin/dashboard.png" data-lightbox="videoStreaming"></a>
+							<a href="img/videoStreaming/admin/adminControl.png" data-lightbox="videoStreaming"></a>
+							<a href="img/videoStreaming/admin/userControl.png" data-lightbox="videoStreaming"></a>
+							<a href="img/videoStreaming/admin/blockUser.png" data-lightbox="videoStreaming"></a>
+							<a href="img/videoStreaming/admin/adminVideo.png" data-lightbox="videoStreaming"></a>
+							<a href="img/videoStreaming/admin/album.png" data-lightbox="videoStreaming"></a>
+							<a href="img/videoStreaming/admin/albumVideos.png" data-lightbox="videoStreaming"></a>
+							<a href="img/videoStreaming/admin/deleteVideo.png" data-lightbox="videoStreaming"></a>
+							<a href="img/videoStreaming/admin/editVideo.png" data-lightbox="videoStreaming"></a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 mb-4 portfolio-item third">
+					<div class="position-relative overflow-hidden mb-2">
+						<img class="img-fluid rounded w-100" src="img/enotes/home.png" alt="">
+						<div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
+							<a href="img/enotes/home.png" data-lightbox="enotes">
+								<i class="fa fa-plus text-white" style="font-size: 60px;"></i>
+							</a>
+							<a href="img/enotes/register.png" data-lightbox="enotes"></a>
+							<a href="img/enotes/login.png" data-lightbox="enotes"></a>
+							<a href="img/enotes/userHome.png" data-lightbox="enotes"></a>
+							<a href="img/enotes/add.png" data-lightbox="enotes"></a>
+							<a href="img/enotes/show.png" data-lightbox="enotes"></a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 mb-4 portfolio-item second">
+					<div class="position-relative overflow-hidden mb-2">
+						<img class="img-fluid rounded w-100" src="img/smartcontact/Home.png" alt="">
+						<div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
+							<a href="img/smartcontact/Home.png" data-lightbox="smartcontact">
+								<i class="fa fa-plus text-white" style="font-size: 60px;"></i>
+							</a>
+							<a href="img/smartcontact/register.png" data-lightbox="smartcontact"></a>
+							<a href="img/smartcontact/login.png" data-lightbox="smartcontact"></a>
+							<a href="img/smartcontact/forgot.png" data-lightbox="smartcontact"></a>
+							<a href="img/smartcontact/otpverify.png" data-lightbox="smartcontact"></a>
+							<a href="img/smartcontact/newPassword.png" data-lightbox="smartcontact"></a>
+							<a href="img/smartcontact/homePage.png" data-lightbox="smartcontact"></a>
+							<a href="img/smartcontact/contact.png" data-lightbox="smartcontact"></a>
+							<a href="img/smartcontact/contact1.png" data-lightbox="smartcontact"></a>
+							<a href="img/smartcontact/search.png" data-lightbox="smartcontact"></a>
+							<a href="img/smartcontact/full.png" data-lightbox="smartcontact"></a>
+							<a href="img/smartcontact/showContact.png" data-lightbox="smartcontact"></a>
+							<a href="img/smartcontact/add.png" data-lightbox="smartcontact"></a>
+							<a href="img/smartcontact/add1.png" data-lightbox="smartcontact"></a>
+							<a href="img/smartcontact/profile.png" data-lightbox="smartcontact"></a>
+							<a href="img/smartcontact/setting.png" data-lightbox="smartcontact"></a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 mb-4 portfolio-item first">
+					<div class="position-relative overflow-hidden mb-2">
+						<img class="img-fluid rounded w-100" src="img/spring/product.png" alt="">
+						<div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
+							<a href="img/spring/product.png" data-lightbox="spring">
+								<i class="fa fa-plus text-white" style="font-size: 60px;"></i>
+							</a>
+							<a href="img/spring/product1.png" data-lightbox="spring"></a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 mb-4 portfolio-item second">
+					<div class="position-relative overflow-hidden mb-2">
+						<img class="img-fluid rounded w-100" src="img/church/church.png" alt="">
+						<div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
+							<a href="img/church/church.png" data-lightbox="church">
+								<i class="fa fa-plus text-white" style="font-size: 60px;"></i>
+							</a>
+							<a href="img/church/register.png" data-lightbox="church"></a>
+							<a href="img/church/login.png" data-lightbox="church"></a>
+							<a href="img/church/home.png" data-lightbox="church"></a>
+							<a href="img/church/contact.png" data-lightbox="church"></a>
+							<a href="img/church/reservation.png" data-lightbox="church"></a>
+							<a href="img/church/adminHome.png" data-lightbox="church"></a>
+							<a href="img/church/notification.png" data-lightbox="church"></a>
+							<a href="img/church/list.png" data-lightbox="church"></a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 mb-4 portfolio-item third">
+					<div class="position-relative overflow-hidden mb-2">
+						<img class="img-fluid rounded w-100" src="img/ebook/Home.png" alt="">
+						<div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
+							<a href="img/ebook/Home.png" data-lightbox="ebook">
+								<i class="fa fa-plus text-white" style="font-size: 60px;"></i>
+							</a>
+							
+							<a href="img/ebook/homePage.png" data-lightbox="ebook"></a>
+							<a href="img/ebook/register.png" data-lightbox="ebook"></a>
+							<a href="img/ebook/login.png" data-lightbox="ebook"></a>
+							<a href="img/ebook/userHome.png" data-lightbox="ebook"></a>
+							<a href="img/ebook/recentBook.png" data-lightbox="ebook"></a>
+							<a href="img/ebook/newBook.png" data-lightbox="ebook"></a>
+							<a href="img/ebook/oldBook.png" data-lightbox="ebook"></a>
+							<a href="img/ebook/viewBook.png" data-lightbox="ebook"></a>
+							<a href="img/ebook/order.png" data-lightbox="ebook"></a>
+							<a href="img/ebook/completeOrder.png" data-lightbox="ebook"></a>
+							<a href="img/ebook/viewOrder.png" data-lightbox="ebook"></a>
+							<a href="img/ebook/sellOldBook.png" data-lightbox="ebook"></a>
+							<a href="img/ebook/userBook.png" data-lightbox="ebook"></a>
+							<a href="img/ebook/profile.png" data-lightbox="ebook"></a>
+							<a href="img/ebook/contact.png" data-lightbox="ebook"></a>
+							<a href="img/ebook/adminHome.png" data-lightbox="ebook"></a>
+							<a href="img/ebook/adminSellBook.png" data-lightbox="ebook"></a>
+							<a href="img/ebook/allBooks.png" data-lightbox="ebook"></a>
+							<a href="img/ebook/adminEditBook.png" data-lightbox="ebook"></a>
+							<a href="img/ebook/allOrders.png" data-lightbox="ebook"></a>
+							<a href="img/ebook/logout.png" data-lightbox="ebook"></a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 mb-4 portfolio-item second">
+					<div class="position-relative overflow-hidden mb-2">
+						<img class="img-fluid rounded w-100" src="img/onlineTable/home.png" alt="">
+						<div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
+							<a href="img/onlineTable/home.png" data-lightbox="onlineTable">
+								<i class="fa fa-plus text-white" style="font-size: 60px;"></i>
+							</a>
+							<a href="img/onlineTable/register.png" data-lightbox="onlineTable"></a>
+							<a href="img/onlineTable/login.png" data-lightbox="onlineTable"></a>
+							<a href="img/onlineTable/home.png" data-lightbox="onlineTable"></a>
+							<a href="img/onlineTable/contact.png" data-lightbox="onlineTable"></a>
+							<a href="img/onlineTable/menu.png" data-lightbox="onlineTable"></a>
+							<a href="img/onlineTable/reservation.png" data-lightbox="onlineTable"></a>
+							<a href="img/onlineTable/admin.png" data-lightbox="onlineTable"></a>
+							<a href="img/onlineTable/list.png" data-lightbox="onlineTable"></a>
+							<a href="img/onlineTable/notification.png" data-lightbox="onlineTable"></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Portfolio End -->
+
+
+	<!-- Contact Start -->
+	<div class="container-fluid py-5" id="contact">
+		<div class="container">
+			<div class="position-relative d-flex align-items-center justify-content-center">
+				<h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Contact
+				</h1>
+				<h1 class="position-absolute text-uppercase text-primary">Contact Me</h1>
+			</div>
+			<div class="row justify-content-center">
+				<div class="col-lg-8">
+					<div class="contact-form text-center">
+						<div th:if="${session.message}" th:classappend="${session.message.type}"
+							class="alert alert-dismissible fade show" role="alert">
+							<p th:text="${session.message.content}"></p>
+
+							<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+							<!--remove the message-->
+
+							<th:block th:text="${@userServiceImpl.removeSessionMessage()}"></th:block>
+
+						</div>
+						<form name="sentMessage" id="contactForm" th:action="@{/sendMail}" method="post">
+							<div class="form-row">
+								<div class="control-group col-sm-6">
+									<input type="text" class="form-control p-4 mb-4" id="name" name="name"
+										placeholder="Your Name" required="required" />
+								</div>
+								<div class="control-group col-sm-6">
+									<input type="email" class="form-control p-4 mb-4" name="email" id="email"
+										placeholder="Your Email" required="required" />
+								</div>
+							</div>
+							<div class="control-group">
+								<input type="text" class="form-control p-4 mb-4" id="subject" name="subject"
+									placeholder="Subject" required="required" />
+							</div>
+							<div class="control-group">
+								<textarea class="form-control py-3 px-4 mb-4" rows="5" id="message" name="message"
+									placeholder="Message" required="required"></textarea>
+							</div>
+							<div>
+								<button class="btn btn-outline-primary" type="submit" id="sendMessageButton">Send
+									Message</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Contact End -->
+
+
+	<!-- Footer Start -->
+	<div class="container-fluid bg-primary text-white mt-5 py-5 px-sm-3 px-md-5">
+		<div class="container text-center py-5">
+			<div class="d-flex justify-content-center mb-4">
+				<a class="btn btn-light btn-social mr-2" href="https://www.youtube.com/@codewithfaisal547/"><i
+						class="fab fa-youtube"></i></a>
+				<a class="btn btn-light btn-social mr-2" href="https://github.com/faisalmastoi55"><i
+						class="fab fa-github"></i></a>
+				<a class="btn btn-light btn-social mr-2" href="https://www.linkedin.com/in/faisalmastoi/"><i
+						class="fab fa-linkedin-in"></i></a>
+				<a class="btn btn-light btn-social" href="https://www.instagram.com/faisalhussainmastoi/"><i
+						class="fab fa-instagram"></i></a>
+			</div>
+			<div class="d-flex justify-content-center mb-3">
+				<a class="text-white" href="#">Privacy</a>
+				<span class="px-3">|</span>
+				<a class="text-white" href="#">Terms</a>
+				<span class="px-3">|</span>
+				<a class="text-white" href="#">FAQs</a>
+				<span class="px-3">|</span>
+				<a class="text-white" href="#">Help</a>
+			</div>
+			<p class="m-0">&copy; <a class="text-white font-weight-bold" href="#">Faisal Portfolio</a>. All Rights
+				Reserved. Designed by <a class="text-white font-weight-bold" href="https://htmlcodex.com">Faisal Ali
+				</a>
+			</p>
+		</div>
+	</div>
+	<!-- Footer End -->
+
+	<!-- Scroll to Bottom -->
+	<i class="fa fa-2x fa-angle-down text-white scroll-to-bottom"></i>
+
+	<!-- Back to Top -->
+	<a href="#" class="btn btn-outline-dark px-0 back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+		crossorigin="anonymous"></script>
+
+	<!-- JavaScript Libraries -->
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+	<script src="lib/typed/typed.min.js"></script>
+	<script src="lib/easing/easing.min.js"></script>
+	<script src="lib/waypoints/waypoints.min.js"></script>
+	<script src="lib/owlcarousel/owl.carousel.min.js"></script>
+	<script src="lib/isotope/isotope.pkgd.min.js"></script>
+	<script src="lib/lightbox/js/lightbox.min.js"></script>
+
+	<!-- Contact Javascript File -->
+	<script src="js/jqBootstrapValidation.min.js"></script>
+	<script th:src="@{js/contact.js}"></script>
+
+	<script th:src="@{/js/main.js}"></script>
+
+
+</body>
+
+</html>
