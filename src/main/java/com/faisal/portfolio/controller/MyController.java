@@ -47,6 +47,6 @@ public class MyController {
 			session.setAttribute("message", new Message("Sorry " + name + ", it seems that our mail server is not responding. Please try again later!", "alert-danger"));
 			
 		}
-		return "redirect:/#contact";
+		return "redirect:#contact";
 	}
 }
