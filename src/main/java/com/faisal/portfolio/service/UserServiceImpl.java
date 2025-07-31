@@ -41,8 +41,8 @@ public class UserServiceImpl implements UserService{
 		properties.put("mail.smtp.port", "587");
 		properties.put("mail.smtp.host", host);
 
-		String userName = "faisalmastoi341";
-		String password = "puzywgrnpumfyoei";
+		String userName = "faisalmastoi341@gmail.com";
+		String password = "ysvumugviifplzco";
 
 		// Step 1: to get the session object
 		Session session = Session.getInstance(properties, new Authenticator() {
